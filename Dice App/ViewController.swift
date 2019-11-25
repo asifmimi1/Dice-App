@@ -27,6 +27,9 @@ class ViewController: UIViewController {
     @IBAction func rollButton(_ sender: UIButton) {
        diceLogo()
     }
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        diceLogo()
+    }
     
     func diceLogo() {
         randomImage1 = Int.random(in: 0 ... 5)
